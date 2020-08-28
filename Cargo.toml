@@ -1,0 +1,29 @@
+[package]
+name = "sh0r7"
+description = ""
+version = "0.0.0"
+homepage = "https://github.com/r3v2d0g/sh0r7"
+repository = "https://git.r3vd5u3d.network/~r3v2d0g/sh0r7"
+keywords = []
+categories = []
+readme = "README.md"
+license = "MPL-2.0"
+authors = ["Matthieu Le brazidec (r3v2d0g) <r3v2d0g@jesus.gg>"]
+edition = "2018"
+publish = false
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+js-sys = "0.3"
+url = "2.1"
+wasm-bindgen = "0.2"
+wasm-bindgen-futures = "0.4"
+
+[dependencies.web-sys]
+version = "0.3"
+features = ["Request", "Response", "ResponseInit"]
+
+[profile.release]
+opt-level = "s"

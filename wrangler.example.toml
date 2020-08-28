@@ -1,0 +1,12 @@
+name = "sh0r7"
+type = "rust"
+
+account_id = ""
+workers_dev = true
+route = ""
+zone_id = ""
+
+[[kv-namespaces]]
+binding = "kv"
+id = ""
+preview_id = ""
