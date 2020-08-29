@@ -1,6 +1,15 @@
 #+OPTIONS: toc:nil
 
 * ~sh0r7~
+URL shortening via Cloudflare Workers
+
+** Usage
+#+BEGIN_SRC bash
+./bin/put.sh --permanent jesus.gg /sh0r7/ https://github.com/r3v2d0g/sh0r7
+./bin/put.sh --append-path rust-lang.fr https://rust-lang.org
+./bin/put.sh --fetch jesus.gg /key/ https://3mm4.r3vd5u3d.network/public/r3v2d0g.key
+#+END_SRC
+
 ** License
 #+BEGIN_QUOTE
 This Source Code Form is subject to the terms of the Mozilla Public
