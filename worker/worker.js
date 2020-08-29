@@ -7,7 +7,7 @@ async function handleRequest(request) {
     await wasm_bindgen(wasm);
 
     try {
-        return await handle(request, kv);
+        return await handle(request, kv, caches.default);
     } catch {
         return new Response("", { status: 500 });
     }
